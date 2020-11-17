@@ -16,10 +16,17 @@ const immagini = [
 const myApp = new Vue({
   el: ('#root'),
   data: {
-    imageSrc: 'img/image1.jpg',
+    imageSrc: immagini.map(e => e.url),
+    imageIndex: 0,
   },
 
   methods: {
+    forward: function(){
+      this.imageIndex ++
+    },
+    back: function(){
+      this.imageIndex --
+    }
 
 
   }

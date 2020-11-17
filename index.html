@@ -18,13 +18,13 @@
     <div id="root" class="container">
       <div class="row">
         <div class="col-2 align-self-center">
-          <a @click="" href="#"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+          <a @click="back" href="#"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
         </div>
         <div class="col">
-          <img v-bind:src="imageSrc" alt="">
+          <img :src="imageSrc[imageIndex]" alt="">
         </div>
         <div class="col-2 align-self-center">
-          <a href="#"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+          <a @click="forward" href="#"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
