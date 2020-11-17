@@ -22,10 +22,14 @@ const myApp = new Vue({
 
   methods: {
     forward: function(){
-      this.imageIndex ++
+      if (this.imageIndex === this.imageSrc.length - 1) {
+        this.imageIndex = 0;
+      } else this.imageIndex ++
     },
     back: function(){
-      this.imageIndex --
+      if (this.imageIndex === 0) {
+        this.imageIndex = this.imageSrc.length - 1;
+      } else this.imageIndex --
     }
 
 

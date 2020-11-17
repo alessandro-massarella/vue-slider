@@ -1,3 +1,6 @@
+* {
+  font-size: 40px;
+}
 .row .col > img {
   width: 70%;
 }
